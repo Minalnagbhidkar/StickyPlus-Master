@@ -1,12 +1,12 @@
 #!/bin/bash
 
-sudo chmod -R 777 /home/ubuntu/Stickynote-Upgrade/
+sudo chmod -R 777 /home/ubuntu/StickyPlus-Master/
 
 echo "Starting Node.js application using PM2..."
 
 # Navigate to the application directory
-cd /home/ubuntu/Stickynote-Upgrade
-cp /home/ubuntu/Stickynote-Upgrade/websocket-server/server.js /home/ubuntu/Stickynote-Upgrade/
+cd /home/ubuntu/StickyPlus-Master
+#cp /home/ubuntu/Stickynote-Upgrade/websocket-server/server.js /home/ubuntu/StickyPlus-Master
 
 # Stop the existing application instance, if running
 pm2 delete server || true # Ignore errors if the process is not found
