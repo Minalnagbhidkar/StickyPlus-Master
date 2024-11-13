@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/StickPlus-Master/ # Change this to your app's directory on the server
+    destination: /home/ubuntu/StickyPlus-Master/ # Change this to your app's directory on the server
 
 hooks:
   BeforeInstall:
