@@ -5,7 +5,7 @@ sudo chmod -R 777 /home/ubuntu/StickyPlus-Master/
 echo "Starting Node.js application using PM2..."
 
 # Navigate to the application directory
-cd /home/ubuntu/StickyPlus-Master
+cd /home/ubuntu/StickyPlus-Master/
 #cp /home/ubuntu/Stickynote-Upgrade/websocket-server/server.js /home/ubuntu/StickyPlus-Master
 
 # Stop the existing application instance, if running
