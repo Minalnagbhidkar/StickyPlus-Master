@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/StickPlus-Master/ # Change this to your app's directory on the server
+
+hooks:
+  BeforeInstall:
+    - location: before_install.sh
+      timeout: 300
+      runas: ubuntu # Change this if you're using a different user
+
+  AfterInstall:
+    - location: after_install.sh
+      timeout: 300
+      runas: ubuntu
+
+  ApplicationStart:
+    - location: application_start.sh
+      timeout: 300
+      runas: ubuntu

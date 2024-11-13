@@ -1,0 +1,35 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing source node dependencies...
+
+      - npm install
+      - sudo npm i pm2
+      - npm install ws
+      - npm install express
+      - npm install mysql2
+      - npm install body-parser
+      - npm install mocha
+
+
+  pre_build:
+    commands:
+      - echo Pre-build phase started on `date`
+      # You can add more commands here if needed
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the node code...
+      # Add your build commands here
+      # For example, you could run a build script
+      # - npm run build
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      # You can add additional commands here if needed
